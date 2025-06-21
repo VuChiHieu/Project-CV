@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Trình Chiếu</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAV NGANG, DÍNH TRÊN CÙNG -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#home" class="active">Trang chủ</a></li>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#education">Học tập</a></li>
+      <li><a href="#experience">Kinh nghiệm</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- PHẦN NỘI DUNG CUỘN -->
+  <main>
+    <!-- TRANG CHỦ -->
+    <section id="home" class="section banner-section">
+      <div class="banner">
+        <h1>Chào mừng đến với CV của tôi</h1>
+        <p>Web Developer | UI/UX Designer</p>
+      </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section id="about" class="section about-section">
+      <div class="about-container">
+        <div class="about-img">
+          <img src="img/hieuha.png" alt="Ảnh đại diện">
+        </div>
+        <div class="about-info">
+          <h2>Giới thiệu bản thân</h2>
+          <p><strong>Họ tên:</strong> Hà Ngọc Hiếu</p>
+          <p><strong>Ngày sinh:</strong> 08/09/2005</p>
+          <p><strong>Sở thích:</strong> Lập trình, âm nhạc, đọc sách</p>
+          <p><strong>Giới thiệu:</strong> Hiện đang là sinh viên ngành Công nghệ Thông tin tại Đại học Giao Thông Vận Tải. Mình đặc biệt thích lập trình và đang tập trung học ngôn ngữ/công nghệ yêu thích, ví dụ: Python, Java, Web Development, AI... Ngoài code ra, mình cũng hay đọc sách công nghệ và thử nghiệm các dự án nhỏ. Rất vui được kết nối với bạn!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education-section">
+  <h2 class="section-title">Học tập</h2>
+
+  <!-- Thanh chọn slide -->
+  <div class="edu-tabs">
+    <button class="edu-tab active" data-tab="edu-slide-1">Ngôn ngữ & Học vấn</button>
+    <button class="edu-tab" data-tab="edu-slide-2">Chứng chỉ</button>
+  </div>
+
+  <!-- SLIDE 1: Ngôn ngữ và Học vấn -->
+    <div id="edu-slide-1" class="edu-slide active">
+    <div class="edu-flex">
+        <!-- Học vấn bên trái -->
+        <div class="timeline">
+        <h3>Học vấn</h3>
+        <ul>
+            <li>🎓<strong>2011 - 2016:</strong> Tiểu học Thanh Bình B</li>
+            <li>🏫<strong>2016 - 2020:</strong> THCS Thanh Bình</li>
+            <li>🏫 <strong>2020 - 2023:</strong> THPT Thanh Hòa</li>
+            <li>💻<strong>2023 - Nay:</strong> Đại học Giao Thông Vận Tải – CNTT</li>
+        </ul>
+        </div>
+
+        <!-- Ngôn ngữ bên phải -->
+        <div class="language-bar">
+        <p>Tiếng Việt</p>
+        <div class="bar"><div class="fill" data-width="100%"></div></div>
+
+        <p>Tiếng Anh</p>
+        <div class="bar"><div class="fill"  data-width="65%"></div></div>
+
+        <p>Tiếng Nhật</p>
+        <div class="bar"><div class="fill"  data-width="40%"></div></div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- SLIDE 2: Chứng chỉ -->
+    <div id="edu-slide-2" class="edu-slide">
+    <div class="certificates">
+        <h3>Chứng chỉ</h3>
+        <ul>
+        <li>
+            <p>Chứng chỉ Tin học cơ bản</p>
+            <img src="img/chungchi.png" alt="Chứng chỉ Tin học" class="cert-img">
+        </li>
+        <li>
+            <p>Chứng chỉ lập trình Python – Codelearn</p>
+            <img src="img/chungchi2.png" alt="Chứng chỉ Python" class="cert-img">
+        </li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+<section id="experience" class="section experience-section">
+  <h2 class="section-title">Kinh nghiệm</h2>
+
+  <!-- Tabs -->
+  <div class="exp-tabs">
+    <button class="exp-tab active" data-tab="exp-slide-1">Kinh nghiệm làm việc</button>
+    <button class="exp-tab" data-tab="exp-slide-2">Kỹ năng nghề nghiệp</button>
+  </div>
+
+  <!-- Slide 1: Kinh nghiệm làm việc -->
+  <div id="exp-slide-1" class="exp-slide active">
+    <div class="work-experience">
+        <ul>
+        <li class="exp-card">
+            <h4>Thực tập Web Developer</h4>
+            <p><strong>Công ty FPT</strong> – 6/2024 đến 8/2024</p>
+            <p>Phát triển website giới thiệu sản phẩm bằng HTML, CSS, JavaScript. Làm việc nhóm theo mô hình Agile.</p>
+        </li>
+        <li class="exp-card">
+            <h4>Freelancer Thiết kế Web</h4>
+            <p><strong>Dự án cá nhân</strong> – 2023 đến nay</p>
+            <p>Thiết kế landing page cá nhân, portfolio, CV cho sinh viên ngành công nghệ thông tin.</p>
+        </li>
+        </ul>
+    </div>
+    </div>
+
+
+    <!-- Slide 2: Kỹ năng nghề nghiệp -->
+    <!-- Slide 2 -->
+    <div id="exp-slide-2" class="exp-slide">
+    <div class="skills">
+        <h3>Kỹ năng nghề nghiệp</h3>
+
+        <p>C++</p>
+        <div class="bar"><div class="fill" data-width="75%"></div></div>
+
+        <p>Python</p>
+        <div class="bar"><div class="fill" data-width="85%"></div></div>
+
+        <p>JavaScript</p>
+        <div class="bar"><div class="fill" data-width="65%"></div></div>
+    </div>
+    </div>
+
+    <footer class="footer" id="lienhe">
+    <div class="footer-left">
+        <p class="footer-quote">"Thanks!"</p>
+    </div>
+
+    <div class="footer-right">
+        <a href="tel:0869461370" title="Gọi điện"><ion-icon name="call-outline"></ion-icon></a>
+        <a href="mailto:hieuthuhai8925@gmail.com" title="Gửi email"><ion-icon name="mail-outline"></ion-icon></a>
+        <a href="https://www.facebook.com/share/1P62D132a1/" target="_blank" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/hieubede_89?igsh=NG5mYWRsMTZmeXJ0" target="_blank" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.google.com/maps?q=Tân+chánh+hiệp,+quận+12,+thành+phố+HCM" title="Địa chỉ"><ion-icon name="location-outline"></ion-icon></a>
+    </div>
+  </footer>
+
+</section>
+
+</main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
