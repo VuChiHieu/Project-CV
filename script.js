@@ -127,5 +127,20 @@ $(document).ready(function () {
       skillsAnimated = true;
     }
   });
- 
+
+  $('.cert-card a').on('click', function (e) {
+      e.preventDefault(); // không mở tab mới
+      const pdfUrl = $(this).attr('href');
+      $('#popup-frame').attr('src', pdfUrl);
+      $('#popup').fadeIn();
+    });
+
+    // Đóng popup
+    $('.popup-close, #popup').on('click', function (e) {
+      // Click bên ngoài hoặc nút X đều đóng
+      if (e.target !== $('#popup-frame')[0]) {
+        $('#popup').fadeOut();
+        $('#popup-frame').attr('src', ''); // clear nội dung
+      }
+    });
 });
